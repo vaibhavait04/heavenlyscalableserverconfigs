@@ -1,4 +1,4 @@
-# Heavenly Scalable Server Configs
+# Scalable Server Configs
 Server configuration and setup guides
 
 ## Nginx setup with multiple API hosts 
