@@ -2,7 +2,7 @@
 
 ## Case when we have one API per server with multiple servers
 
-nginx -c /devsandbox/margin/vsachdev/git/prac/nginxTestSetup/nginx/nginx.conf -p /devsandbox/margin/vsachdev/git/prac/nginxTestSetup/nginx/ -s [reload|stop|quit]
+nginx -c /home/vs/nginx_setup//nginx.conf -p /home/vs/nginx_setup// -s [reload|stop|quit]
 
   Nginx host: http://dev001:8099
 
@@ -16,8 +16,8 @@ nginx -c /devsandbox/margin/vsachdev/git/prac/nginxTestSetup/nginx/nginx.conf -p
 
   Nginx Configuration: 
     worker_processes  5;  ## Default: 1
-    error_log  /devsandbox/margin/vsachdev/git/prac/nginxTestSetup/nginx/logs/error.log;
-    pid        /devsandbox/margin/vsachdev/git/prac/nginxTestSetup/nginx/logs/nginx.pid;
+    error_log  /home/vs/nginx_setup//logs/error.log;
+    pid        /home/vs/nginx_setup//logs/nginx.pid;
     worker_rlimit_nofile 8192;
 
     events {
@@ -45,8 +45,8 @@ b) dev001:8090
 
 Nginx config 
     worker_processes  5;  ## Default: 1
-    error_log  /devsandbox/margin/vsachdev/git/prac/nginxTestSetup/nginx/logs/error.log;
-    pid        /devsandbox/margin/vsachdev/git/prac/nginxTestSetup/nginx/logs/nginx.pid;
+    error_log  /home/vs/nginx_setup//logs/error.log;
+    pid        /home/vs/nginx_setup//logs/nginx.pid;
     worker_rlimit_nofile 8192;
 
     events {
